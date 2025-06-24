@@ -1,71 +1,99 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19781134&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+# React + Vite
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Assignment Overview
+Currently, two official plugins are available:
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Getting Started
+## Expanding the ESLint configuration
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-## Files Included
+# 🎨 Week 3 Project: Task Manager + API Explorer (React + Tailwind + shadcn/ui)
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+## 🚀 Objective
 
-## Requirements
+Build a responsive and interactive React application using JSX, Tailwind CSS, and reusable components from `shadcn/ui`. This project demonstrates your ability to manage component state, use hooks, fetch API data, and create a clean, user-friendly interface.
 
-- Node.js (v18 or higher)
+---
+
+## 📂 Tasks Completed
+
+### ✅ Task 1: Project Setup
+- Initialized project using **Vite**
+- Installed **React**, **Tailwind CSS**, and **shadcn/ui**
+- Created organized folder structure:
+- Set up Tailwind and PostCSS configs
+- Routing is not used in this version but is ready for future updates
+
+---
+
+### ✅ Task 2: Component Architecture
+- Created **reusable UI components**:
+- `Button` – with primary/secondary/outline styles
+- `Card` – used to group task form and filters
+- `TaskItem` – for displaying each task row
+- Built `TaskManager` layout using these components
+- Theme and props are used to customize styles
+
+---
+
+### ✅ Task 3: State Management and Hooks
+- Built a complete **Task Manager** with:
+- Add Task
+- Mark as Completed
+- Delete Task
+- Filter by All, Active, Completed
+- Used:
+- `useState` for state control
+- `useEffect` for initial loading
+- `useContext` for theme toggling (light/dark)
+- Custom hook `useLocalStorage` for saving tasks persistently
+
+---
+
+### ✅ Task 4: API Integration
+- Created a `PostList` component using [JSONPlaceholder](https://jsonplaceholder.typicode.com/posts)
+- Displayed post title and body using Cards
+- Added:
+- **Search** by title
+- **Loading** indicator
+- **Error** message fallback
+- Clean responsive list layout
+
+---
+
+### ✅ Task 5: Tailwind CSS Styling
+- Fully responsive layout using Tailwind utility classes
+- Implemented **light/dark mode toggle** using `useContext`
+- Added smooth **transitions/animations** for UI elements
+- Used `@shadcn/ui` components styled with Tailwind
+
+---
+
+## 🧪 Final Result
+
+- ✅ Functional Task Manager with filters and persistent storage
+- ✅ Functional API Explorer with search and error handling
+- ✅ Light/Dark Mode toggle
+- ✅ Fully responsive layout for mobile, tablet, and desktop
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. ✅ Requirements
+- Node.js (v18 or newer recommended)
 - npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
 
-## Project Structure
+### 2. ✅ Installation
 
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
+Clone the repo:
 
-## Submission
+```bash
+git clone https://github.com/John-V-Coder/React-Tailwind-vite.git
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
-
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
-
-## Resources
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+screenshorts prove
+![alt text](<Screenshot (166).png>) ![alt text](<Screenshot (167).png>) ![alt text](<Screenshot (168).png>)
